@@ -21,6 +21,22 @@ gsap.fromTo('#hero .will-right', { opacity:0, x:32 }, {
   opacity:1, x:0, duration:1, ease:'power3.out', delay:0.4
 });
 
+gsap.fromTo('.hero-photo',
+  {
+    opacity: 0,
+    y: 20,
+    scale: 0.98
+  },
+  {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 1.2,
+    ease: 'power3.out',
+    delay: 0.1
+  }
+);
+
 // ── Scroll reveals — generic ──
 function reveal(sel, xFrom, yFrom, delayBase) {
   gsap.utils.toArray(sel).forEach((el, i) => {
