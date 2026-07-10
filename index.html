@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maria Amor Iglesia | Marketing Automation Specialist</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+<!-- ═══════════════ MOBILE MENU ═══════════════ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">
+    <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </button>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#problem" onclick="toggleMenu()">The Problem</a>
+  <a href="#solution" onclick="toggleMenu()">The Solution</a>
+  <a href="#casestudy" onclick="toggleMenu()">Case Study</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" onclick="toggleMenu()" style="color:var(--accent)">Book a Call</a>
+</div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Maria Amor Iglesia</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#casestudy">Case Study</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="nav-cta-btn">Book a Call</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- ═══════════════ 1. HERO ═══════════════ -->
+<section id="hero" class="sec">
+  <div class="hero-rule"></div>
+  <div class="inner">
+    <div class="hero-layout">
+
+      <div class="will-fade">
+        <div class="hero-tag">
+          <span class="hero-dot"></span>
+          Marketing Automation Specialist
+        </div>
+        <h1 class="h1-serif">
+          I turn manual chaos<br/>into automated<br/><em style="color:var(--accent);font-style:italic">revenue engines.</em>
+        </h1>
+        <p class="hero-sub">
+          I design landing pages, lead capture systems, and automation workflows
+          that help service businesses capture leads faster, automate follow-up,
+          and reduce operational drag behind the scenes.
+        </p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="btn-dark">
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            Book a Discovery Call
+          </a>
+          <a href="#featured-demo" class="btn-light">View Sample Automation</a>
+        </div>
+        <div class="hero-trust">
+          <span>Funnels</span><span class="hero-trust-dot">•</span>
+          <span>Landing Pages</span><span class="hero-trust-dot">•</span>
+          <span>Email Automation</span><span class="hero-trust-dot">•</span>
+          <span>CRM / Workflow Systems</span>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrapper">
+      <img src="./images/7.png" class="hero-photo" alt="Maria Amor Iglesia, Marketing Automation Specialist" />
+        </div> 
+
+
+
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ═══════════════ 2. SERVICES ═══════════════ -->
+<section id="services" class="sec">
+  <div class="inner">
+
+    <div style="text-align:center;max-width:560px;margin:0 auto 48px" class="will-fade">
+      <span class="eyebrow">Services</span>
+      <h2 class="h2-serif" style="margin-top:8px">Built for the bottlenecks<br/>that slow conversion.</h2>
+      <p class="lead" style="margin:12px auto 0;text-align:center">
+        Whether you need a cleaner lead capture funnel, an automated follow-up
+        workflow, or a more complete marketing automation system, these offers
+        solve the operational gaps between inquiry and conversion.
+      </p>
+    </div>
+
+    <div class="service-grid will-scale">
+
+      <div class="service-card">
+        <span class="service-label">Starter Offer</span>
+        <h3 class="service-title">Funnel Starter System</h3>
+        <p class="service-sub">A conversion-focused landing page and lead capture setup for businesses that need a cleaner front-end system for inquiries, bookings, or lead magnets.</p>
+        <p class="service-fit"><strong>Best for:</strong> coaches, consultants, educators, and service businesses that need a polished page and a reliable lead capture flow without a full automation build.</p>
+        <ul class="service-list">
+          <li>1 landing page or opt-in page</li>
+          <li>Lead capture form integration</li>
+          <li>Thank-you page or thank-you state</li>
+          <li>CTA and section structure</li>
+          <li>Mobile-responsive setup</li>
+          <li>Simple lead routing or follow-up setup</li>
+        </ul>
+        <div class="service-meta">
+          <div>
+            <div class="service-price">Starting at $500</div>
+            <div class="service-timeline">5–7 business days</div>
+          </div>
+          <a href="#casestudy" class="btn-light">View Scope</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-label">Core Offer</span>
+        <h3 class="service-title">Funnel + Email Automation Build</h3>
+        <p class="service-sub">A landing page plus automated follow-up system for businesses that need leads captured, tagged, and nurtured without manual chasing.</p>
+        <p class="service-fit"><strong>Best for:</strong> businesses with an offer ready to promote but no reliable email workflow, weak follow-up, or disconnected lead handling after form submission.</p>
+        <ul class="service-list">
+          <li>1 landing page or opt-in page</li>
+          <li>Lead capture workflow setup</li>
+          <li>3–5 email automation sequence</li>
+          <li>CRM / Google Sheets / tool integration</li>
+          <li>Tagging and segmentation logic</li>
+          <li>Workflow testing and QA</li>
+        </ul>
+        <div class="service-meta">
+          <div>
+            <div class="service-price">Starting at $900</div>
+            <div class="service-timeline">10–14 business days</div>
+          </div>
+          <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="btn-light">Book Discovery</a>
+        </div>
+      </div>
+
+      <div class="service-card service-card--flagship">
+        <span class="service-label service-label--accent">Flagship Offer</span>
+        <h3 class="service-title">Marketing Automation System Build</h3>
+        <p class="service-sub">A deeper workflow build for businesses dealing with manual processes, weak follow-up, disconnected tools, or inconsistent lead handling across the funnel.</p>
+        <p class="service-fit"><strong>Best for:</strong> service businesses that need more than a landing page — and want a structured lead flow, automation logic, and operational cleanup behind it.</p>
+        <ul class="service-list">
+          <li>Workflow audit and business analysis</li>
+          <li>Funnel and lead journey mapping</li>
+          <li>Landing page or lead capture asset</li>
+          <li>Email and SMS automation setup</li>
+          <li>CRM / lead routing / tagging logic</li>
+          <li>KPI tracking or reporting setup</li>
+        </ul>
+        <div class="service-meta">
+          <div>
+            <div class="service-price">Starting at $1,500</div>
+            <div class="service-timeline">3–5 weeks</div>
+          </div>
+          <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="btn-dark">Request Audit</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FEATURED AUTOMATION DEMO ═══════════════ -->
+<section id="featured-demo" class="sec" style="background:var(--white)">
+  <div class="inner">
+    <div class="demo-layout">
+
+      <div class="will-left">
+        <span class="eyebrow">Featured Automation Demo</span>
+        <h2 class="h2-serif" style="margin-top:8px">A sample workflow build — from form submission to automated confirmation.</h2>
+        <p class="lead" style="margin-top:14px;max-width:460px">
+          This sample automation shows how I connect a form-based inquiry flow to
+          structured lead tracking and automated email confirmation using Google
+          Forms, Google Sheets, and Apps Script.
+        </p>
+        <p class="lead" style="margin-top:10px;max-width:460px">
+          It's the kind of setup that works well for registrations, lead capture,
+          inquiries, onboarding flows, and admin-heavy processes that still rely
+          on manual confirmation.
+        </p>
+        <ul class="demo-highlights">
+          <li>Captures submissions in a structured workflow</li>
+          <li>Sends automatic confirmation emails after form completion</li>
+          <li>Reduces manual follow-up and repetitive admin tasks</li>
+          <li>Creates a cleaner handoff between inquiry and response</li>
+        </ul>
+        <div style="font-size:0.75rem;color:var(--muted);margin:18px 0 22px;font-family:'DM Mono',monospace">
+          <strong style="color:var(--ink)">Tools used:</strong> Google Forms • Google Sheets • Apps Script
+        </div>
+      </div>
+
+      <a href="https://youtu.be/BWJWjxlAV5w?si=brHVJ3XpI8ygELK8" target="_blank" class="demo-preview will-right">
+        <img src="./images/1.png" alt="Turn your Google Form into an auto email system thumbnail" class="demo-thumb" />
+        <div class="demo-preview-play">
+          <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 2. PROBLEM ═══════════════ -->
+<section id="problem" class="sec">
+  <div class="inner">
+    <div class="problem-cols">
+
+      <div>
+        <span class="eyebrow will-fade">The Problem</span>
+        <h2 class="h2-serif will-fade" style="transition-delay:0.07s">Manual systems quietly leak revenue.</h2>
+        <div class="divider will-fade" style="transition-delay:0.12s"></div>
+        <p class="lead will-fade" style="transition-delay:0.17s">
+          Most funnel and follow-up problems don't come from effort. They come from
+          broken handoffs, scattered tools, delayed response time, and workflows
+          that were never properly designed to support conversion.
+        </p>
+
+        <div style="margin-top:28px" class="will-fade" style="transition-delay:0.22s">
+          <div class="pain-item">
+            <div class="pain-icon">
+              <svg width="12" height="12" fill="none" stroke="#b91c1c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <div>
+              <div class="pain-title">Leads sit too long without follow-up</div>
+              <div class="pain-body">When forms, inboxes, and internal workflows aren't connected, response time slows — and qualified leads cool off before the conversation even starts.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">
+              <svg width="12" height="12" fill="none" stroke="#b91c1c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <div>
+              <div class="pain-title">Form submissions go nowhere</div>
+              <div class="pain-body">A landing page can capture interest, but if the lead isn't routed, tagged, or acknowledged properly, the system breaks right after the click.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">
+              <svg width="12" height="12" fill="none" stroke="#b91c1c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <div>
+              <div class="pain-title">Manual admin work slows the entire funnel</div>
+              <div class="pain-body">Repeated copy-paste work, manual confirmations, spreadsheet cleanup, and disconnected tools create operational drag that compounds over time.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">
+              <svg width="12" height="12" fill="none" stroke="#b91c1c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <div>
+              <div class="pain-title">No visibility into where leads drop off</div>
+              <div class="pain-body">Without a clear workflow, it becomes difficult to see whether the problem is the page, the follow-up, the routing, or the lack of automation behind it.</div>
+            </div>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">
+              <svg width="12" height="12" fill="none" stroke="#b91c1c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <div>
+              <div class="pain-title">Good offers still underperform inside weak systems</div>
+              <div class="pain-body">Sometimes the issue isn't the offer or the traffic. It's the missing structure between inquiry, follow-up, and conversion.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="stat-card will-right">
+          <div class="stat-num-lg" style="color:var(--red)">Cold</div>
+          <div class="stat-label">A lead that waits too long for a reply rarely comes back — the window to convert closes fast, and it doesn't reopen.</div>
+        </div>
+        <div class="stat-card will-right" style="transition-delay:0.1s">
+          <div class="stat-num-lg" style="color:var(--amber)">Lost</div>
+          <div class="stat-label">Unrouted form submissions sit in an inbox or spreadsheet with no owner, no tag, and no next step.</div>
+        </div>
+        <div class="stat-card will-right" style="transition-delay:0.2s">
+          <div class="stat-num-lg" style="color:var(--accent)">Blind</div>
+          <div class="stat-label">Without workflow visibility, it's guesswork whether the page, the follow-up, or the routing is the actual bottleneck.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 3. SOLUTION ═══════════════ -->
+<section id="solution" class="sec">
+  <div class="inner">
+
+    <div style="text-align:center;max-width:500px;margin:0 auto 48px" class="will-fade">
+      <span class="eyebrow">The Solution</span>
+      <h2 class="h2-serif" style="margin-top:8px">Systems architecture,<br/>not isolated tasks.</h2>
+      <p class="lead" style="margin:12px auto 0;text-align:center">
+        A landing page is only one part of the conversion system. The real work
+        happens in the handoff between capture, routing, follow-up, and visibility —
+        which is why I build around the workflow behind the funnel, not just the
+        page in front of it.
+      </p>
+    </div>
+
+    <div class="layer-cards layer-cards--4 will-scale">
+      <div class="layer-card">
+        <div class="layer-num">01</div>
+        <div class="layer-title">Capture</div>
+        <div class="layer-body">Design a landing page or lead entry point that gives the right offer a cleaner path to conversion — booking flow, inquiry form, lead magnet, or registration system.</div>
+        <div class="layer-meta">Landing pages · Forms · CTA flow</div>
+      </div>
+      <div class="layer-card">
+        <div class="layer-num">02</div>
+        <div class="layer-title">Route</div>
+        <div class="layer-body">Connect submissions to the right workflow so leads don't disappear into inboxes, spreadsheets, or disconnected tools — with cleaner routing and tagging from the start.</div>
+        <div class="layer-meta">Form-to-sheet logic · CRM sync</div>
+      </div>
+      <div class="layer-card">
+        <div class="layer-num">03</div>
+        <div class="layer-title">Follow Up</div>
+        <div class="layer-body">Build the automated response layer behind the funnel — confirmation emails, nurture sequences, reminders, internal notifications, and lead status updates.</div>
+        <div class="layer-meta">Email · SMS · Reminders</div>
+      </div>
+      <div class="layer-card">
+        <div class="layer-num">04</div>
+        <div class="layer-title">Track</div>
+        <div class="layer-body">Set up visibility around what's happening after the form submission — where leads are moving, where friction exists, and what needs improvement.</div>
+        <div class="layer-meta">KPI tracking · Reporting sheets</div>
+      </div>
+    </div>
+
+    <div class="will-fade" style="margin-top:32px;background:var(--bg);border-radius:var(--radius);padding:22px 24px;border:1px solid var(--rule)">
+      <div style="font-size:0.62rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-family:'DM Mono',monospace">Tools I Work Across</div>
+      <div class="stack-pills">
+        <span class="stack-pill">Google Forms</span>
+        <span class="stack-pill">Google Sheets</span>
+        <span class="stack-pill">Apps Script</span>
+        <span class="stack-pill">HubSpot CRM</span>
+        <span class="stack-pill">Zoho CRM</span>
+        <span class="stack-pill">Zapier</span>
+        <span class="stack-pill">Make.com</span>
+        <span class="stack-pill">ActiveCampaign</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ 4. CASE STUDY ═══════════════ -->
+<section id="casestudy" class="sec" style="align-items:flex-start">
+  <div class="inner">
+
+    <div class="will-fade" style="margin-bottom:32px">
+      <span class="eyebrow">Live Case Study</span>
+      <h2 class="h2-serif" style="margin-top:8px">From Excel Chaos to Automated<br/>Revenue Engine</h2>
+      <div class="divider" style="margin:16px 0 14px"></div>
+      <p class="lead">
+        Transforming a 100% manual IT training business — fragmented spreadsheets,
+        1% alumni retention, undetected fraud — into a centralized, omnichannel
+        automated pipeline targeting 3,000 verified leads per month.
+      </p>
+    </div>
+
+    <!-- Company bar -->
+    <div class="cs-company-bar will-fade" style="transition-delay:0.08s">
+      <div class="cs-company-logo">
+        <svg width="18" height="18" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      </div>
+      <div>
+        <div class="cs-company-name">NexusCloud IT Solutions Inc.</div>
+        <div class="cs-company-sub">IT Certifications · CCNA, Cloud, Security · Philippines</div>
+      </div>
+      <span class="cs-badge">Strategy &amp; Blueprint</span>
+    </div>
+
+    <!-- KPI row -->
+    <div class="cs-kpis will-fade" style="transition-delay:0.12s">
+      <div class="kpi-box">
+        <div class="kpi-num">3,000</div>
+        <div class="kpi-lbl">Verified leads<br/>per month (target)</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">10–20%</div>
+        <div class="kpi-lbl">Lead conversion rate<br/>within 90 days</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">15–25%</div>
+        <div class="kpi-lbl">Alumni retention<br/>(up from 1%)</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">&lt; 2 min</div>
+        <div class="kpi-lbl">Lead response<br/>via CRM automation</div>
+      </div>
+    </div>
+
+    <!-- Two-col -->
+    <div class="cs-layout">
+
+      <!-- Tightened 3-block summary -->
+      <div class="timeline">
+
+        <div class="tl-step will-fade">
+          <div class="tl-dot" style="background:var(--red)"></div>
+          <div class="tl-phase" style="color:var(--red)">The Challenge</div>
+          <div class="tl-title">Too many manual handoffs. Not enough system support.</div>
+          <div class="tl-body">The existing workflow relied heavily on manual admin work, fragmented tracking, and inconsistent follow-up — client, student, and transaction records were typed by hand into disconnected spreadsheets, scheduling ran on manual assignment, and payment tracking was unmonitored, creating delays, duplicated effort, and weak visibility into what was actually happening after a lead came in.</div>
+          <div class="tl-tags">
+            <span class="tl-tag red">Manual data entry</span>
+            <span class="tl-tag red">Disconnected follow-up</span>
+            <span class="tl-tag red">Weak visibility</span>
+          </div>
+        </div>
+
+        <div class="tl-step will-fade" style="transition-delay:0.08s">
+          <div class="tl-dot"></div>
+          <div class="tl-phase">What I Rebuilt</div>
+          <div class="tl-title">A cleaner workflow designed around routing, follow-up, and visibility.</div>
+          <div class="tl-body">The goal wasn't to automate one task, but to rebuild the system around it: a unified CRM schema replaced fragmented Excel sheets, scheduling was automated against real-time availability, payment tracking gained fraud checks and aging-balance alerts, and Meta Ads leads were piped via webhook into structured Email + SMS drip sequences — including a 14- and 30-day post-graduation retargeting program.</div>
+          <div class="tl-tags">
+            <span class="tl-tag">CRM migration</span>
+            <span class="tl-tag">Scheduling automation</span>
+            <span class="tl-tag">Drip sequences</span>
+            <span class="tl-tag">Alumni lifecycle</span>
+          </div>
+        </div>
+
+        <div class="tl-step will-fade" style="transition-delay:0.16s">
+          <div class="tl-dot green"></div>
+          <div class="tl-phase green">Operational Impact</div>
+          <div class="tl-title">Less manual effort. Cleaner follow-up. Better visibility.</div>
+          <div class="tl-body">The result was a workflow that required far less manual effort, supported faster handling of incoming leads, and created a clear structure for follow-up, routing, and internal execution — with a scalable foundation in place for future automation as the business grows.</div>
+          <div class="tl-tags">
+            <span class="tl-tag green">Reduced admin load</span>
+            <span class="tl-tag green">Faster response time</span>
+            <span class="tl-tag green">Scalable foundation</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="cs-sidebar">
+
+        <!-- Before / After -->
+        <div class="sidebar-card will-right">
+          <div class="sidebar-card-title">Before vs. Target</div>
+          <table class="ba-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Before</th>
+                <th>Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly Leads</td>
+                <td>Untracked</td>
+                <td>3,000 / mo</td>
+              </tr>
+              <tr>
+                <td>Conversion Rate</td>
+                <td>Stagnant</td>
+                <td>10–20%</td>
+              </tr>
+              <tr>
+                <td>Alumni Retention</td>
+                <td>~1%</td>
+                <td>15–25%</td>
+              </tr>
+              <tr>
+                <td>Lead Response</td>
+                <td>Hours–days</td>
+                <td>&lt; 2 min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CTA card -->
+        <div class="cta-card will-right" style="transition-delay:0.1s">
+          <div class="cta-card-title">Want this built for your business?</div>
+          <div class="cta-card-body">Tell me where leads are getting stuck — on the page, in follow-up, or somewhere in the workflow — and I'll map the right build for it.</div>
+          <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="cta-card-btn">
+            Book Discovery Call →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 5. PROCESS ═══════════════ -->
+<section id="process" class="sec">
+  <div class="inner">
+
+    <div style="text-align:center;max-width:460px;margin:0 auto 0" class="will-fade">
+      <span class="eyebrow">How I Work</span>
+      <h2 class="h2-serif" style="margin-top:8px;font-size:clamp(1.5rem,2.8vw,2.1rem)">Four steps. Systems live in weeks, not months.</h2>
+      <p class="lead" style="margin:12px auto 0;text-align:center">
+        Every build starts by understanding where the funnel breaks and the workflow
+        stalls, then maps the system, builds the right assets, and makes sure the
+        final setup is usable — not just technically "done."
+      </p>
+    </div>
+
+    <div class="process-grid will-scale">
+      <div class="proc-step">
+        <div class="proc-n">Step 01</div>
+        <div class="proc-icon" style="background:var(--accent-l)">
+          <svg width="16" height="16" fill="none" stroke="var(--accent)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <div class="proc-title">Discovery / Audit</div>
+        <div class="proc-body">I review your current offer flow, landing pages, lead capture process, tools, and manual bottlenecks to identify where follow-up, routing, or conversion is breaking.</div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-n">Step 02</div>
+        <div class="proc-icon" style="background:#f5f3ff">
+          <svg width="16" height="16" fill="none" stroke="#7c3aed" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        </div>
+        <div class="proc-title">System Blueprint</div>
+        <div class="proc-body">I map the funnel structure, automation logic, lead routing, and workflow priorities so the build is tied to an actual business process — not a pile of disconnected tasks.</div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-n">Step 03</div>
+        <div class="proc-icon" style="background:var(--green-l)">
+          <svg width="16" height="16" fill="none" stroke="var(--green)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="proc-title">Build &amp; Deploy</div>
+        <div class="proc-body">I build the landing page, workflows, automations, integrations, and follow-up sequences, then test the system to make sure it behaves the way it should.</div>
+      </div>
+      <div class="proc-step">
+        <div class="proc-n">Step 04</div>
+        <div class="proc-icon" style="background:var(--amber-l)">
+          <svg width="16" height="16" fill="none" stroke="var(--amber)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <div class="proc-title">Optimize &amp; Handoff</div>
+        <div class="proc-body">I review the workflow after launch, clean up friction points, and hand over a system that's documented, usable, and easier to manage moving forward.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ───────────────────── CTA ───────────────────── -->
+<section id="cta" class="sec" style="background:var(--ink);min-height:auto;padding:clamp(80px,12vh,120px) clamp(20px,5vw,60px)">
+  <div class="cta-inner will-fade">
+    <span class="eyebrow" style="color:rgba(255,255,255,0.3)">Ready to Start</span>
+    <h2 class="cta-h2">If your lead flow still depends<br/>on manual chasing, it's time<br/>to rebuild the system.</h2>
+    <p class="cta-sub">Tell me where leads are getting stuck — on the page, in follow-up, or somewhere inside the workflow — and I'll help map the right funnel or automation build for it.</p>
+    <div class="cta-pills">
+      <span class="cta-pill">Free 30-min discovery call</span>
+      <span class="cta-pill">No commitment required</span>
+      <span class="cta-pill">Response within 24 hours</span>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a href="https://calendly.com/v8porfolio/request-a-system-audit-discovery-call" target="_blank" class="cta-btn">
+        <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Book a Discovery Call
+      </a>
+      <a href="#services" class="cta-btn" style="background:transparent;color:white;border:1px solid rgba(255,255,255,0.25);box-shadow:none">Request an Automation Audit</a>
+    </div>
+    <p class="cta-note">For businesses that need cleaner lead capture, better follow-up, and less operational drag behind the scenes.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT + FOOTER ═══════════════ -->
+<section id="contact" class="sec">
+  <div class="footer-inner will-fade">
+    <div class="footer-name">Maria Amor Iglesia</div>
+    <div class="footer-role">Marketing Automation Specialist · Funnel Systems Consultant</div>
+    <div class="contact-chips">
+      <a href="mailto:iglesia.ria@gmail.com" class="contact-chip">
+        <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        iglesia.ria@gmail.com
+      </a>
+      <a href="tel:+639943588304" class="contact-chip">
+        <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +63 994 358 8304
+      </a>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-copy">Landing Pages · Funnel Workflows · Email Automation · Workflow Systems</div>
+    <div class="footer-copy" style="margin-top:6px">© 2026 Maria Amor Iglesia · Philippines</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
