@@ -381,6 +381,63 @@ nav.stuck {
 }
 .svc-mini-callout-title { font-size: 0.7rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
 .svc-mini-callout-body { font-size: 0.65rem; color: var(--ink2); line-height: 1.45; }
+/* ── Hover-reveal inclusions panel ── */
+.service-image { position: relative; }
+.svc-mini-card {
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+.service-card:hover .svc-mini-card,
+.service-card:focus-within .svc-mini-card {
+  opacity: 0;
+  filter: blur(1px);
+}
+.service-includes {
+  position: absolute; inset: 0;
+  background: #fff; border: 1px solid var(--rule); border-radius: 10px;
+  padding: 18px 18px 16px;
+  display: flex; flex-direction: column;
+  opacity: 0; pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 3;
+}
+.service-card--flagship .service-includes { border-color: rgba(124,58,237,0.25); }
+.service-card:hover .service-includes,
+.service-card:focus-within .service-includes {
+  opacity: 1; pointer-events: auto; transform: translateY(0);
+}
+.service-includes-title {
+  font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  margin-bottom: 12px;
+}
+.service-includes-list {
+  list-style: none; display: flex; flex-direction: column; gap: 9px;
+  overflow-y: auto;
+}
+.service-includes-item {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 0.78rem; color: var(--ink2); line-height: 1.4;
+}
+.service-includes-icon {
+  width: 16px; height: 16px; border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px;
+}
+.service-includes-icon svg { width: 9px; height: 9px; fill: none; stroke-width: 2.4; }
+.service-includes-item--yes .service-includes-icon { background: var(--accent-l); }
+.service-includes-item--yes .service-includes-icon svg { stroke: var(--accent); }
+.service-includes-item--yes strong { color: var(--ink); font-weight: 600; }
+.service-includes-item--no {
+  color: var(--muted);
+}
+.service-includes-item--no .service-includes-icon { background: rgba(0,0,0,0.05); }
+.service-includes-item--no .service-includes-icon svg { stroke: var(--muted); }
+.service-includes-item--no span { text-decoration: line-through; text-decoration-color: rgba(0,0,0,0.2); }
+.service-includes-divider {
+  border: none; border-top: 1px dashed var(--rule); margin: 10px 0;
+}
+
 .service-meta {
   display: flex; align-items: flex-end; justify-content: space-between;
   gap: 10px; padding-top: 18px; border-top: 1px solid var(--rule);
