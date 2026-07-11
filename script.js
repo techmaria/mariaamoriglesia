@@ -114,6 +114,51 @@ gsap.utils.toArray('.proc-step').forEach((el, i) => {
   );
 });
 
+// ── Click-to-play demo video (with real error handling) ──
+const demoPreview = document.getElementById('demoPreview');
+const demoPlayBtn = document.getElementById('demoPlayBtn');
+let ytApiReady = false;
+let pendingPlay = false;
+
+window.onYouTubeIframeAPIReady = function () {
+  ytApiReady = true;
+  if (pendingPlay) startDemoPlayer();
+};
+
+function showDemoFallback() {
+  const url = demoPreview.dataset.videoUrl;
+  demoPreview.classList.add('demo-preview--fallback');
+  demoPreview.innerHTML = `
+    <div class="demo-fallback">
+      <div class="demo-fallback-title">This preview can't play here</div>
+      <div class="demo-fallback-body">The video owner has restricted embedding. Watch it directly on YouTube instead.</div>
+      <a href="${url}" target="_blank" rel="noopener" class="demo-fallback-btn">Watch on YouTube →</a>
+    </div>`;
+}
+
+function startDemoPlayer() {
+  const videoId = demoPreview.dataset.videoId;
+  demoPreview.innerHTML = '<div id="ytPlayerTarget" class="demo-preview-frame"></div>';
+  new YT.Player('ytPlayerTarget', {
+    videoId: videoId,
+    playerVars: { autoplay: 1, rel: 0 },
+    events: {
+      onReady: e => e.target.playVideo(),
+      onError: () => showDemoFallback()
+    }
+  });
+}
+
+if (demoPreview && demoPlayBtn) {
+  demoPlayBtn.addEventListener('click', () => {
+    if (ytApiReady) {
+      startDemoPlayer();
+    } else {
+      pendingPlay = true;
+      demoPreview.innerHTML = '<div class="demo-fallback"><div class="demo-fallback-title">Loading player…</div></div>';
+    }
+  });
+}
 // ── Smooth scroll ──
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
